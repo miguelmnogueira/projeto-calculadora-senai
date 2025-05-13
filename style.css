@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer components {
+    .numberInput {
+        height: 110px;
+        width: 80px;
+        border: 1px solid #ffffff86;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+        font-size: 21px;
+    }
+}
+
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

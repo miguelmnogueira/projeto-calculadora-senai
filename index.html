@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link rel="stylesheet" href="output.css" />
+        <title>Calculator</title>
+    </head>
+    <body
+        class="bg-black flex flex-col items-center justify-center h-screen"
+    >
+        <main
+            class="w-[800px] h-[600px] border-[#ffffff6b] border-1 justify-center items-center flex flex-col gap-10 rounded-2xl"
+        >
+            <div class="flex gap-6 justify-center">
+                <div>
+                    <input
+                        type="number"
+                        max="10"
+                        min="1"
+                        class="numberInput"
+                        inputmode="numeric"
+                        id="n1"
+                    />
+                    <span
+                        class="text-white text-[20px]"
+                        id="displayOperation"
+                        >+</span
+                    >
+                    <input
+                        type="number"
+                        max="10"
+                        min="1"
+                        class="numberInput"
+                        id="n2"
+                    />
+                </div>
+                <span class="text-white items-center flex text-[20px]"
+                    >=</span
+                >
+                <span
+                    class="numberInput flex justify-center items-center"
+                    id="displayNumber"
+                ></span>
+            </div>
+            <div class="flex items-center justify-center ga text-lg">
+                <button
+                    onclick="calculate('plus')"
+                    class="text-white w-14 h-18 border-1 rounded-l-lg cursor-pointer border-[#ffffff88] flex items-center justify-center"
+                >
+                    +
+                </button>
+                <button
+                    onclick="calculate('sub')"
+                    class="text-white w-14 h-18 border-1 border-x-[0] border-[#ffffff88] cursor-pointer flex items-center justify-center"
+                >
+                    -
+                </button>
+                <button
+                    onclick="calculate('mult')"
+                    class="text-white w-14 h-18 border-1 border-r-[0] border-[#ffffff88] cursor-pointer flex items-center justify-center"
+                >
+                    X
+                </button>
+                <button
+                    onclick="calculate('div')"
+                    class="text-white w-14 h-18 border-1 rounded-r-lg cursor-pointer border-[#ffffff88] flex items-center justify-center"
+                >
+                    /
+                </button>
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
